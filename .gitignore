@@ -1,0 +1,36 @@
+.DS_Store
+Thumbs.db
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+.env
+.venv/
+venv/
+
+# Remote-only heavy assets.
+data/
+models/
+outputs/
+logs/
+Experiments/data/
+Experiments/logs/
+
+# Keep curated result figures and metrics, but skip bulky progress dumps.
+*.log
+Experiments/results/**/step_*.png
+Experiments/results/**/checkpoint*
+
+# Reference PDFs are reproducible from public sources and are not required for
+# server handoff. Keep Markdown notes and citation files in Git.
+Reference/*.pdf
+
+# Large packaged submissions or archives should use GitHub Release / rsync / LFS.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z

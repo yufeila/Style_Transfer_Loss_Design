@@ -1,0 +1,28 @@
+{
+  "experiment_name": "strong_baseline",
+  "content_image": "/data1/yyf/Style_Transfer_Loss_Design/data/raw/content/golden_gate_bridge.jpg",
+  "style_image": "/data1/yyf/Style_Transfer_Loss_Design/data/raw/style/composition_vii_kandinsky.jpg",
+  "output_dir": "/data1/yyf/Style_Transfer_Loss_Design/outputs/strong_baseline",
+  "image_size": 1024,
+  "init": "noise",
+  "pooling": "avg",
+  "optimizer": "lbfgs",
+  "steps": 3000,
+  "learning_rate": 1.0,
+  "content_layers": [
+    "conv4_2"
+  ],
+  "style_layers": [
+    "conv1_1",
+    "conv2_1",
+    "conv3_1",
+    "conv4_1",
+    "conv5_1"
+  ],
+  "content_weight": 3.0,
+  "style_weight": 300000.0,
+  "tv_weight": 0.1,
+  "save_every": 300,
+  "seed": 42,
+  "device": "cuda"
+}

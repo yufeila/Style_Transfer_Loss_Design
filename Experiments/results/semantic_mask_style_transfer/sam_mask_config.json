@@ -1,0 +1,26 @@
+{
+  "method": "prompt_guided_sam",
+  "sam_checkpoint": "/data1/yyf/Style_Transfer_Loss_Design/models/sam/sam_vit_b_01ec64.pth",
+  "model_type": "vit_b",
+  "labels": [
+    "sky",
+    "water",
+    "bridge",
+    "building",
+    "mountain_land"
+  ],
+  "image_size": 1024,
+  "note": "SAM is promptable but not semantic by itself; labels come from fixed boxes/points.",
+  "stats": {
+    "content_mask_fraction_sky": 0.4961204528808594,
+    "content_mask_fraction_water": 0.2326498031616211,
+    "content_mask_fraction_bridge": 0.1637897491455078,
+    "content_mask_fraction_building": 0.05256366729736328,
+    "content_mask_fraction_mountain_land": 0.05487632751464844,
+    "style_mask_fraction_sky": 0.04652118682861328,
+    "style_mask_fraction_water": 0.09339523315429688,
+    "style_mask_fraction_bridge": 0.6307992935180664,
+    "style_mask_fraction_building": 0.12395477294921875,
+    "style_mask_fraction_mountain_land": 0.10532951354980469
+  }
+}
