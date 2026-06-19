@@ -12,7 +12,6 @@ __pycache__/
 venv/
 
 # Remote-only heavy assets.
-data/
 models/
 outputs/
 logs/
@@ -28,6 +27,7 @@ Experiments/results/**/checkpoint*
 # server handoff. Keep Markdown notes and citation files in Git.
 Reference/*.pdf
 
+# Raw experiment images under data/raw/ are intentionally committed.
 # Large packaged submissions or archives should use GitHub Release / rsync / LFS.
 *.zip
 *.tar
