@@ -1,0 +1,15 @@
+{
+  "step": 3000,
+  "total_loss": 0.8761011362075806,
+  "content_loss": 0.183090478181839,
+  "style_loss": 1.046509169100318e-06,
+  "masked_style_loss": 1.046509169100318e-06,
+  "tv_loss": 0.12876936793327332,
+  "weighted_content_loss": 0.5492714643478394,
+  "weighted_style_loss": 0.3139527440071106,
+  "weighted_tv_loss": 0.012876937165856361,
+  "style_loss_sky": 5.609880417978275e-07,
+  "style_loss_water": 1.246144591959819e-07,
+  "style_loss_bridge_building": 2.8036953381160856e-07,
+  "style_loss_mountain_land": 8.053714850575489e-08
+}

@@ -1,0 +1,46 @@
+{
+  "experiment_name": "semantic_mask_style_transfer_sam_morph",
+  "content_image": "/data1/yyf/Style_Transfer_Loss_Design/data/raw/content/golden_gate_bridge.jpg",
+  "style_image": "/data1/yyf/Style_Transfer_Loss_Design/data/raw/style/composition_vii_kandinsky.jpg",
+  "output_dir": "/data1/yyf/Style_Transfer_Loss_Design/outputs/semantic_mask_style_transfer_sam_morph",
+  "image_size": 1024,
+  "init": "noise",
+  "pooling": "avg",
+  "optimizer": "lbfgs",
+  "steps": 3000,
+  "learning_rate": 1.0,
+  "content_layers": [
+    "conv4_2"
+  ],
+  "style_layers": [
+    "conv1_1",
+    "conv2_1",
+    "conv3_1",
+    "conv4_1",
+    "conv5_1"
+  ],
+  "content_weight": 3.0,
+  "style_weight": 300000.0,
+  "tv_weight": 0.1,
+  "style_loss_mode": "masked_gram",
+  "semantic_masks": {
+    "method": "sam_prompt_masks",
+    "labels": [
+      "sky",
+      "water",
+      "bridge_building",
+      "mountain_land"
+    ],
+    "mask_dir": "/data1/yyf/Style_Transfer_Loss_Design/masks/sam_bridge_morph_1024",
+    "source": "Content and style masks use prompt-guided SAM ViT-H masks. The content bridge mask includes constrained morphology completion for cables. SAM labels bridge and building are merged into bridge_building for the masked Gram style loss.",
+    "region_weights": {
+      "sky": 1.0,
+      "water": 1.0,
+      "bridge_building": 1.0,
+      "mountain_land": 1.0
+    }
+  },
+  "save_every": 300,
+  "seed": 42,
+  "device": "cuda"
+}

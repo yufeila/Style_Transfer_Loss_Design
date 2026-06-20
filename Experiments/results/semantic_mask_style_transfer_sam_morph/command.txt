@@ -1,0 +1,2 @@
+cd /data1/yyf/Style_Transfer_Loss_Design/code
+CUDA_VISIBLE_DEVICES=0 python run_style_transfer.py --config configs/semantic_mask_style_transfer_sam_morph.json
